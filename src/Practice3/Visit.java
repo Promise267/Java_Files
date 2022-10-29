@@ -1,23 +1,27 @@
 package Practice3;
 import java.util.Date;
 
-
+//declaring Visit class which extends properties of Customer class
 public class Visit extends Customer{
 
+        ///declaring instances
         private Customer customer;
         private Date date;
         private static double serviceExpense;
         private static double productExpense;
 
+        //parameterized constructor
         Visit(String name) {
                 super(name);
         }
 
+        //constructor overloading
+        //parameterized constructor
         Visit(String name, Date date) {
                 super(name);
                 this.date = date;
         }
-
+        //getters and setters
         public String getName(){return (customer.getName());}
 
         public double getServiceExpense() {return serviceExpense;}
@@ -33,6 +37,7 @@ public class Visit extends Customer{
                 return (getProductExpense() + getServiceExpense());
         }
 
+        //overriding toString method to display values of objects
         @Override
         public String toString() {
                 return "\nVisit" + '\n' +

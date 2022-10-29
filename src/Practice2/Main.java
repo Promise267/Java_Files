@@ -12,6 +12,7 @@ public class Main {
 
 
 
+
         // Using Polymorphism
         Animal animal1 = new Cat("Tom");
         animal1.greets();
@@ -19,8 +20,6 @@ public class Main {
         animal2.greets();
         Animal animal3 = new BigDog("Spike");
         animal3.greets();
-
-
 
     }
 

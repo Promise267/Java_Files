@@ -1,12 +1,16 @@
 package Practice1;
 
+//Book class inherits from Author class
 public class Book extends Author {
+
+    //declaring instance variables
     private String isbn;
     private String name;
     private double price;
     private int qty;
     private Author author;
 
+    //parameterized constructor
     Book(String isbn, String name, Author author,double price){
         super();
         this.isbn = isbn;
@@ -14,6 +18,9 @@ public class Book extends Author {
         this.author = author;
         this.price = price;
     }
+
+    //constructor overloading
+    //parameterized constructor
     Book(String isbn, String name, Author author,double price, int qty){
         super();
         this.isbn = isbn;
@@ -22,7 +29,7 @@ public class Book extends Author {
         this.price = price;
         this.qty = qty;
     }
-
+    //getter and setter function
     public String getIsbn() {
         return isbn;
     }
@@ -51,6 +58,7 @@ public class Book extends Author {
         return author;
     }
 
+    //overriding toString function of Author class to display object in this format
     @Override
     public String toString() {
         return

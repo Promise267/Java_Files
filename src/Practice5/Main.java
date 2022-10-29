@@ -2,6 +2,7 @@ package Practice5;
 
 public class Main {
     public static void main(String[] args) {
+        //main function
         Shape s1 = new Shape("red", true);
         System.out.println(s1);
         Circle c1 = new Circle(5);

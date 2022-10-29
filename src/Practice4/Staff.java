@@ -1,15 +1,17 @@
 package Practice4;
-
+//declaring class Staff which inherits properties from Person class
 public class Staff extends Person{
+    //declaring instances
     String school;
     double pay;
 
+    //parameterized constructor
     Staff(String name, String address, String school, double pay){
         super(name, address);
         this.school = school;
         this.pay = pay;
     }
-
+    //getter and setter
     public String getSchool() {
         return school;
     }
@@ -26,6 +28,7 @@ public class Staff extends Person{
         this.pay = pay;
     }
 
+    //overriding toString method to display object in format
     @Override
     public String toString() {
         return "\nStaff\n" +

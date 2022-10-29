@@ -1,6 +1,7 @@
 package Practice4;
 
 public class Main {
+    //main function
     public static void main(String[] args) {
         Person p1 = new Person("Promise", "Budanilkantha");
         Person p2 = new Person("Ram", "Kapan");

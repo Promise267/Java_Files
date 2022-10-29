@@ -3,7 +3,9 @@ package Practice3;
 import java.util.Date;
 
 public class Main{
+    //main function
     public static void main(String[] args) {
+        //declaring instance of class
         Customer c1 = new Customer("Promise");
         c1.setMember(true);
         c1.setMemberType("Gold");
