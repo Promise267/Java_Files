@@ -18,25 +18,16 @@ public class Visit extends Customer{
                 this.date = date;
         }
 
-        public String getName(){
+        public String getName(){return (customer.getName());}
 
-                return (customer.getName());
-        }
+        public double getServiceExpense() {return serviceExpense;}
 
-        public double getServiceExpense() {
-                return (serviceExpense - (serviceExpense * DiscountRate.getServiceDiscountRate(customer.getMemberType())));
-        }
+        public void setServiceExpense(double ex, double discount) {serviceExpense = ex - (ex * discount); }
 
-        public void setServiceExpense(double ex) {
-                serviceExpense = ex;
-        }
+        public  double getProductExpense() {return productExpense;}
 
-        public  double getProductExpense() {
-                return productExpense;
-        }
-
-        public void setProductExpense(double ex) {
-                productExpense = ex;
+        public void setProductExpense(double ex, double discount) {
+                productExpense = ex - (ex * discount);
         }
         public double getTotalExpense(){
                 return (getProductExpense() + getServiceExpense());
